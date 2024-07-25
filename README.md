@@ -59,4 +59,40 @@ This RISC processor design has been constructed using five pipeline stages. The 
     
 
 ## Implementation on FPGA
-Field Programmable Gate Arrays (FPGAs) are integrated circuits often sold off-the-shelf. They’re referred to as ‘field programmable’ because they provide customers the ability to reconfigure the hardware to meet specific use case requirements after the manufacturing process. This allows for feature upgrades and bug fixes to be performed in situ, which is especially useful for remote deployments. FPG
+Field Programmable Gate Arrays (FPGAs) are integrated circuits often sold off-the-shelf. They’re referred to as ‘field programmable’ because they provide customers the ability to reconfigure the hardware to meet specific use case requirements after the manufacturing process. This allows for feature upgrades and bug fixes to be performed in situ, which is especially useful for remote deployments. 
+
+## Obstacles Faced
+We had originally planned to implement this whole RISC-V cycle on an FPGA (Field
+Programmable Gate Array), specifically the Digilent Basys 3 Artix - 7 FPGA Board. The
+major issue that we faced was being able to generate bitstream. Without the bitstream we
+were unable to run the single cycle on the FPGA and hence couldn’t carry out
+implementation. In the beginning learning phase, difficulties were also encountered with
+the Verilog programming but were easily overcome by studying the language more and
+practising. After successfully coding all the cycles and connecting all register banks as
+well as running the synthesis and mapping the inputs and outputs to specific board pins
+we were faced with this problem right in the last step where the bitstream would not
+generate.
+## Conclusion
+In conclusion, our RISC-V pipelining project has demonstrated the tangible benefits of
+implementing pipelining techniques in processor design. Through systematic
+experimentation and analysis, we have shown significant improvements in performance
+metrics such as execution time, throughput, CPI, and IPC compared to a non-pipelined
+baseline. The incorporation of advanced pipelining strategies, including instruction
+forwarding and branch prediction, has played a pivotal role in enhancing instruction-level
+parallelism and mitigating performance bottlenecks. We also learnt how to implement
+Verilog codes on an FPGA and learnt in detail about OpenLane Flow and its varMoving
+forward, the insights gained from this project can inform future advancements in
+processor design, paving the way for more efficient and high-performance computing
+systems.
+## Future Works
+In the future we plan to work on successfully generating the bitstream and being able to
+implement the whole RISC-V pipelined system on the FPGA board. Although we
+optimised the whole process of instruction execution as much as we possibly could there
+is always scope for improvement. We can always work towards putting more effort into
+increasing the efficiency and functionality of this processor as it has a lot of scope in
+helping future creations.
+References
+● "Verilog HDL: A Guide to Digital Design and Synthesis" by Samir Palnitkar 
+● “Computer Organization and Design” by David Patterson and John Hennessy
+● https://www.arm.com/
+● https://digilent.com/reference/programmable-logic/basys-3/start 
