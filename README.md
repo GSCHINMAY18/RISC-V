@@ -34,7 +34,9 @@ The process of gathering instructions from the processor through a pipeline is k
 This RISC processor design has been constructed using five pipeline stages. The used pipeline stages are the Instruction Fetch stage (IF), Instruction Decode stage (ID), Execution stage (EX), Memory Access stage (MEM), and Write Back stage (WB). Pipeline registers or latches are used to separate the stages of the processor into 5 parts, so there is no contradictory data due to the execution of multiple instructions. Other blocks include instruction memory (IR_MEM), Data memory (DATA_MEM), and General purpose registers. In order to pipeline, we separate the datapath into 5 discrete stages, each completing a different function and accessing different resources on the way to executing an entire instruction.
 
 ### Pipelined RISC-V Processors
-![Pipelined RISC-V Processor]("C:\Users\User\OneDrive\Pictures\Screenshots\Screenshot 2025-01-30 200857.png")
+![Pipelined RISC-V Processor]
+![Screenshot 2025-01-30 200857](https://github.com/user-attachments/assets/9861133a-209d-43e7-bafe-d47452d275e6)
+
 
 ### Pipeline Stages
 1. **Instruction Fetch Cycle**
